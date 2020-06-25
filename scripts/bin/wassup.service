@@ -1,0 +1,13 @@
+[Unit]
+Description=Starts the WassupTeam application server.
+Documentation=https://github.com/thegrimsilence/wassupteam-server
+After=network.target
+
+[Service]
+Type=Simple
+User=wassupteam
+ExecStart=/usr/bin/node /home/wassupteam/scripts/start.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

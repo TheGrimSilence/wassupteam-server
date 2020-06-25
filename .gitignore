@@ -12,3 +12,7 @@ tsconfig.tsbuildinfo
 
 # Webpack Plugins
 node_modules/
+
+# Secrets 🤫
+.env
+.temp/

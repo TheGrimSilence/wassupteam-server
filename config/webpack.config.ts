@@ -6,7 +6,7 @@ import { Configuration } from "webpack";
 const PnpPlugin = require("pnp-webpack-plugin");
 
 /** Name of the entry and output file. */
-const simpleEntryName = "file-example";
+const simpleEntryName = "calendar";
 /** Determine if this a production build. */
 const isProductionBuild: boolean = process.env.NODE_ENV == "production";
 /** Resolve paths down from the root directory. */
