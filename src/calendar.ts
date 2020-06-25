@@ -5,8 +5,6 @@ dotenv.config();
 
 console.log(`Calender ID << ${process.env.CAL_ID}`);
 
-// TODO: export and pull out hardcoded values, dynamicize functions.
-
 const serviceAuth = new google.auth.JWT({
   keyFile: "./.temp/secret.json",
   scopes: [
