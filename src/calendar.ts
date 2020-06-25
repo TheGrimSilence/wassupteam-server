@@ -5,6 +5,9 @@ dotenv.config();
 
 console.log(`Calender ID << ${process.env.CAL_ID}`);
 
+// TODO: Add safety checks such as checking for the existence of a given Calendar/Event before acting on it.
+// TODO: Add webhook for watching changes to the calendars.
+
 const serviceAuth = new google.auth.JWT({
   keyFile: "./.temp/secret.json",
   scopes: [
